@@ -1,0 +1,48 @@
+/*giving the background a color/image*/
+body{
+    background-image: url(backgroundImage.jpeg);
+    background-size: cover;
+}
+/* change header with size, alignment, etc*/
+.title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/*for screen with 425px or less get a modified table*/
+@media 
+only screen and (max-width: 425px){
+
+	/* Force table to turn into blocks*/
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers for accessibility */
+	thead tr { 
+		position: absolute;
+		top: -9000px;
+		left: -9000px;
+	}
+/*border for each row*/
+	tr { border: 1px solid #ccc; }
+	
+/*behave like a row, modify the table cells*/
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	/* Like a table header */
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 50%; 
+		padding-right: 10px; 
+		white-space: wrap;
+	}
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo App</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="container">
+<br>
+        <h2 class="title">List of new Anime to watch</h2>
+<br>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-show">Show</label>
+                            <input type="text" class="form-control" id="new-show" placeholder="Show name">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-season">Seasons</label>
+                            <input type="text" class="form-control" id="new-season" placeholder="How many seasons?">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-show">Episodes</label>
+                            <input type="text" class="form-control" id="new-episodes" placeholder="How many episodes?">
+                        </div>
+                    </div>
+                </div>
+                
+                <div>                   
+                    <button id="add" class="btn btn-primary form-control">Add</button>
+               </div>
+            </div>
+        </div>
+
+        
+<table id="list" class="table table-light table-hover">
+    <tr>
+        <th>Shows</th>
+        <th>Date created</th>
+        <th>Seasons</th>
+        <th>Episodes</th>
+        <th>Actions</th>
+    </tr>
+</table>
+
+    
+
+<script src="index.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
